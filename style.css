@@ -1,9 +1,6 @@
 /* Variables */
 :root {
-    --font-headings: "Ubuntu", Helvetica, sans-serif;
-    --font-content: "Open Sans", sans-serif;
-    --font-size:16px;
-    --color-dark: #3F3F40;
+    --color-dark: #42454a;
     --color-lightblue: #0091DA;
     --color-grey: #f5f5f5;
     --color-black: #000000;
@@ -12,67 +9,78 @@
   }
 
   /* Typography */
-  body {
-    line-height: 1.5;
+  body {  
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; 
+    font-weight: 500;
+    line-height: 32px;
+    color: #42454a;
   }
 
-  /* container {
+  container {
     width: 80%;
     max-width: 1080px;
     margin: auto;
     position:relative
   }
- */ 
-
-  }
-  p {
-    font-family: var(--font-content);
-    color: var(--color-dark);
-    font-weight: 200;
-  }
-  em {
-    color: var(--color-dark);
-    font-weight: 200;
-  }
-  a {
-    text-decoration: none;
-    transition: var(--transition-dur);
-  }
-  a:hover {
-    color: var(--color-lightblue);
-  }
   
-  h1, h2, h3 {
-    font-family: var(--font-headings);
-    
-
-  }
+  a {color:#42454a;}
+  a:hover {color: #0091DA;text-decoration: none;}
 
   h1 {
-    color: var(--color-dark);
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    color: #42454a;
     font-weight: 800;
     font-size: 3rem;
     margin-left: 0;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
     background-image: url('assets/images/divider_black.png'); 
     background-repeat: no-repeat;
     background-position: top left; 
-    
+    background-position-x: 0.8rem;
 
   }
   h2 {
+    font-family: "Ubuntu", Helvetica, sans-serif;
     color: var(--color-lightblue);
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.25rem;
     margin-bottom: 1rem;
+    
   }
   h3 {
+    font-family: "Ubuntu", Helvetica, sans-serif;
     color: var(--color-dark);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    background-image: url('assets/images/divider_black.png'); 
+    margin-top: 1rem;  
+  }
+
+  a {color: #0091DA;text-decoration: none;}
+	a:hover {color: #000;text-decoration: none;}
+
+
+  /* Navbar */
+	.navbar-light .navbar-nav .nav-link {color: #42454a; font-family: "Ubuntu", Helvetica, sans-serif; font-size: 16px; font-weight: 500;}
+	.navbar-light .navbar-nav .nav-link:hover,:focus,:active{color: #0091DA;}
+
+	.navbar-light.scrolled .navbar-nav .nav-link {color: #fff!important ; font-size: 23px!important; font-weight: 500; text-shadow: unset;margin-bottom: 0px;}
+	.navbar-light.scrolled .navbar-nav .nav-link:hover,:focus,:active {color: #CAD400!important;}
+
+	.navbar {background: transparent !important; }
+	.navbar.scrolled {height: 100px!important; background-color: #178494!important; transition: 0.9s ease-out;box-shadow: 0px 3px 6px #00000066;}
+
+	.logo img{width: 150px;}
+	.logo.scrolled img{width: 100px!important;} 
+	
+  .diensten {width: 100%; background-color: #f5f5f5;}
+  .overmij {
+    background-image: url('assets/images/boogvorm.png'); 
     background-repeat: no-repeat;
     background-position: top left; 
+
   }
+ 
