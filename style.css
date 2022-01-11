@@ -1,0 +1,66 @@
+/* Variables */
+:root {
+    --font-headings: "Ubuntu", Helvetica, sans-serif;
+    --font-content: "Open Sans", sans-serif;
+    --font-size:16px;
+    --color-dark: #3F3F40;
+    --color-lightblue: #0091DA;
+    --color-grey: #f5f5f5;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --transition-dur: 0.3s;
+  }
+
+  /* Typography */
+  body {
+    line-height: 1.5;
+  }
+
+  /* container {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position:relative
+  }
+ */ 
+
+  }
+  p {
+    font-family: var(--font-content);
+    color: var(--color-dark);
+    font-weight: 200;
+  }
+  em {
+    color: var(--color-dark);
+    font-weight: 200;
+  }
+  a {
+    text-decoration: none;
+    transition: var(--transition-dur);
+  }
+  a:hover {
+    color: var(--color-lightblue);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-headings);
+  }
+
+  h1 {
+    color: var(--color-dark);
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    color: var(--color-lightblue);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: var(--color-dark);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
