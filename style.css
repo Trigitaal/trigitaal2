@@ -17,32 +17,16 @@
     color: #42454a;
   }
   
-  container {
-    max-width: 1080px;
-  }
 
-  h1 {
-    font-family: "Ubuntu", Helvetica, sans-serif;
-    color: #42454a;
-    font-weight: 800;
-    font-size: 3rem;
-    margin-left: 0;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
-    padding-top: 1rem;
-    background-image: url('assets/images/divider_black.png'); 
-    background-repeat: no-repeat;
-    background-position: top left; 
-    background-position-x: 0.8rem;
-  }
+
   h2 {
     font-family: "Ubuntu", Helvetica, sans-serif;
     color: var(--color-lightblue);
     font-weight: 400;
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    
   }
+
   h3 {
     font-family: "Ubuntu", Helvetica, sans-serif;
     color: var(--color-dark);
@@ -66,104 +50,107 @@
     margin-top: 2rem; 
   }  
 
-  a {color: #0091DA;text-decoration: none;}
-	a:hover {color: #000;text-decoration: none;}
+  a {color: var(--color-lightblue);text-decoration: none;}
+	a:hover {color: var(--color-black);;text-decoration: none;}
 
 
   /* Navbar */
-	.navbar-light .navbar-nav .nav-link {color: #42454a; font-family: "Ubuntu", Helvetica, sans-serif; font-size: 17px; font-weight: 500;align-items: left;}
-	.navbar-light .navbar-nav .nav-link:hover,:focus,:active{color: #0091DA;}
+	.navbar-light .navbar-nav .nav-link {color: var(--color-dark); font-family: "Ubuntu", Helvetica, sans-serif; font-size: 17px; font-weight: 500;align-items: left;}
+
   .navbar-brand {margin-left:0}
 	
 	.logo img{width: 190px;margin-left: -8px;}
-	.logo.scrolled img{width: 150px!important;} 
+
+  .navbar-light .navbar-toggler {
+    border: 0;
+    color: #fff;
+  }
+
 	
-  .navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: none;
-    border-radius: 0.25rem;
-  }
   
 
-  .navbar-toggler:hover, .navbar-toggler:focus {
-    text-decoration: none;
-  }
-  
-  .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    content: "";
-    background: no-repeat center center;
-    background-size: 100% 100%;
 
+  .brandbox h1 {
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    color: var(--color-dark);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    background-image: url('assets/images/divider_black.png'); 
+    background-repeat: no-repeat;
+    background-position: top left; 
+    background-position-x: 0.8rem;
+  }
   
   /* Content */
-  .diensten {width: 100%; background-color: #f5f5f5;}
-  .diensten p {margin-right:1rem;}
+  .activities {width: 100%; background-color: #f5f5f5;}
+  .activities p {margin-right:1rem;}
 
-  .overmij img {margin-top:5rem}
+  .aboutme img {margin-top:5rem}
 
   /* Card */
-	.card {padding:0; height: 100%; background-color: #fff; border-radius: 0px; box-shadow: 0px 0px 1px #42454a;border: 0;}
+	.card {padding:0rem; height: 100%; background-color: #fff; border-radius: 0px; box-shadow: 0px 0px 1px #42454a;border: 0;}
 	.card-top {position: relative;}
 	.card-img img{border-radius: 0px 0px 0px 0px;}
-	.card-body {margin-top: 0px; margin-bottom: 10px;padding:0.5rem}
+	.card-body {padding:1rem;margin-top: 0px; margin-bottom: 10px;}
+  .card h4 {
+      font-size: 0.75rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      margin-top: 1rem; 
+    }  
+  
 	
 	.footer {
-    background-color: #42454a;
+    background-color: var(--color-dark);
     font-family: "Open Sans", sans-serif;
     font-size: 14px; 
     font-weight: 400;
     line-height: 28px;
     color: #fff;
-    
   }
 
   @media (min-width:576px){
-
-  }
-  @media (min-width:768px){
-    .logo img{width: 100px;}
-    .logo.scrolled img{width: 100px!important;} 
-
     
+  }
+
+  @media (min-width:768px){
+
+    .brandbox h1 {
+      font-size: 3rem;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      margin-top: 4rem;
+      padding-top: 1rem;
+      background-image: url('assets/images/divider_black.png'); 
+      background-repeat: no-repeat;
+      background-position: top left; 
+      background-position-x: 0.8rem;
+    }  
   
   }
   @media (min-width:992px){
-    .logo img{width: 150px;}
-    .logo.scrolled img{width: 100px!important;} 	
-
-
+    
       
   }
+
   @media (min-width:1200px){
-    .logo img{width: 190px;}
-    .logo.scrolled img{width: 100px!important;} 
-    .navbar-light .navbar-nav .nav-link {font-size: 19px;}
-    .navbar-light.scrolled .navbar-nav .nav-link {font-size: 19px!important;}
-    .navbar.scrolled {height: 75px!important; background-color: #178494!important; transition: 0.9s ease-out;box-shadow: 0px 3px 6px #00000066;}
-  
+    
+    
   }
+
   @media (min-width:1400px){
-    .logo img{width: 190px;}
-    .logo.scrolled img{width: 100px!important;} 
-    .navbar-light .navbar-nav .nav-link {font-size: 20px; margin-left: 10px;}
-    .navbar-light.scrolled .navbar-nav .nav-link {font-size: 20px!important;}
-    .navbar-nav {margin-right: 30px;}
+    
+  
     
   }
   
   @media (min-width:1600px){
-    .logo img{width: 190px;}
-    .logo.scrolled img{width: 100px!important;} 
-    .navbar-light .navbar-nav .nav-link {font-size: 23px; margin-left: 30px;}
-    .navbar-light.scrolled .navbar-nav .nav-link {font-size: 23px!important;}
-    .navbar-nav {margin-right: 30px;}
+   
+  
     
   }
   
