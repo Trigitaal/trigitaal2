@@ -1,3 +1,27 @@
+$(document).ready(function () {
+	
+	// Collapse Navbar
+	var navbarCollapse = function() {
+		if ($("header").offset().top > 50) {
+			$("header").addClass("header-shrink");
+		} else {
+			$("header").removeClass("header-shrink");
+		}
+	};
+	// Collapse now if page is not at top
+	navbarCollapse();
+	// Collapse the navbar when page is scrolled
+	$(window).scroll(navbarCollapse);
+	// Equal height
+	var cw = $('.partners [class^="col-"] a').width();
+	$('.partners [class^="col-"] a').css({'height':cw+'px'});
+	// Scrollimation
+	if ($('.scrollimation').length && $(window).width()<768) {
+		$('.scrollimation').each(function () {
+			$(this).addClass('in');
+		});
+	}
+
 (function ($) {
   "use strict";
 
